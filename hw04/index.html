@@ -153,7 +153,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      在字體生成的最終章，我們試圖以理性的演算法，丈量感性的筆觸。透過 LPIPS 與 SSIM 兩道度量衡，眾人的筆跡化作了一方數據的星圖。當我落筆的秋意，與同學們千姿百態的「秋」逐一交匯，這已然超越了像素與結構的客觀比對，更像是一場無聲的墨跡對話。凝視著最終交織而成的圖表，那些高低起伏的數值，彷彿訴說著某種隱密的共鳴——原來在橫豎撇捺的轉折之間，我的筆脈正與某些書寫靈魂暗自契合。這是一場極具詩意的實驗，它讓冰冷的科學指標，成為了一枚尋覓筆墨知音的羅盤。
     </div>
   </div>
 
@@ -169,22 +169,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
           <td>Simple baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
           <td>Medium baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
           <td>Strong baseline - 描述</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -194,16 +194,31 @@
   </div>
 
   <!-- ------------------------------------------------>
-  <div class="row hw12 bottomrow">
+  <div class="row hw12">
     <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+      <span>CSV檔位置連結</span>
+      <br>
+      <button type="button" onclick="location.href='https://github.com/ReeveWu/ai2026s/blob/main/hw04/results.csv'">
+        前往查看相似度比較結果
+      </button>
+      <div>(p.s 請記得修改網址)</div>
     </div>
   </div>
 
   <!-- ------------------------------------------------>
-
+  <div class="row hw12" align="center">
+    <div class="col-md-12 twenty">
+      <figcaption>SSIM / LPIPS - 互動式 D3.js</figcaption>
+      <iframe 
+          style="background-color: #fff; display: block;" 
+          src="hover.html" 
+          width="100%" 
+          height="860" 
+          frameborder="0" 
+          scrolling="no">
+      </iframe>
+    </div>
+  </div>
   <!-- ------------------------------------------------>
 
 
@@ -252,4 +267,3 @@
 
 </body>
 </html>
-
