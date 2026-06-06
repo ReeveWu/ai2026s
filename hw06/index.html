@@ -153,7 +153,10 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      在影像被賦予時間的這一回，我們從靜止的畫面走向流動的片刻。ComfyUI 的節點不再只是生成圖片的管線，
+      更像是一條條牽引想像的河道，將 Checkpoint、LoRA 與提示詞串接成完整的工作流。當角色從單張圖像延伸成動畫，
+      四季的小狗、海邊的少女與咖啡館中的午後，逐格在噪聲與運算之間浮現，我才真正感受到文字不只可以召喚畫面，
+      也能推動時間前進。這不只是一次文生影片的技術練習，更像是一場讓想像開始呼吸的實驗。
     </div>
   </div>
 
@@ -169,22 +172,22 @@
         </tr>
         <tr>
           <td rowspan="4" id="myTotal"></td>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox1"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox1" checked></td>
           <td id='m1'>4</td>
-          <td>Simple baseline - 描述</td>
+          <td>Simple baseline - Comfy UI 環境設定完成</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox2"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox2" checked></td>
           <td id='m2'>4</td>
-          <td>Medium baseline - 描述</td>
+          <td>Medium baseline - 生成角色的圖片</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox3"></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox3" checked></td>
           <td id='m3'>2</td>
-          <td>Strong baseline - 描述</td>
+          <td>Strong baseline - 生成完整角色動畫</td>
         </tr>
         <tr>
-          <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
+          <td><input type="checkbox" class="flipswitch" id="myCheckbox4"></td>
           <td id='m4'>-10</td>
           <td>沒有寫100字心得</td>
         </tr>
@@ -195,13 +198,87 @@
 
   <!-- ------------------------------------------------>
   <div class="row hw12 bottomrow">
-    <div class="col-md-12 twenty">
-      <video id="video1" style="width:100%;max-width:100%;" controls="">
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      </video>
+    <div class="col-md-12 twenty" style="background-color:#00AC48;">
+      <figcaption>Comfy UI 環境設定完成</figcaption>
+      <a href="https://civitai.com/models/61643?modelVersionId=67841">CheckPoint: based66_v30</a><br>
+      <a href="https://civitai.com/models/69977/chibi-laugh">LoRA:  chibi-laugh</a><br>  
+      <img src="1.png"  width="100%"><br>
+    </div>
+  </div>
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 1</figcaption>
+      <img src="2.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 2</figcaption>
+      <img src="5.png"  width="100%"><br>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#ff0000;">
+      <figcaption>生成角色的圖片 - 3</figcaption>
+      <img src="7.png"  width="100%"><br>
     </div>
   </div>
 
+  
+  <div class="row hw12 bottomrow">
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 1</figcaption>
+      <img src="3.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"spring day, small golden retriever puppy, flower meadow, soft breeze, butterflies, happy face",
+          "10" :"spring day, small golden retriever puppy, flower meadow, soft breeze, butterflies, happy face",
+          "20" :"spring day, small golden retriever puppy, flower meadow, soft breeze, butterflies, happy face",
+          "30" :"summer day, same golden retriever puppy, sunny beach, straw hat, running near waves, joyful",
+          "40" :"summer day, same golden retriever puppy, sunny beach, straw hat, running near waves, joyful",
+          "50" :"summer day, same golden retriever puppy, sunny beach, straw hat, running near waves, joyful",
+          "60" :"fall day, same golden retriever puppy, forest trail, orange fallen leaves, cozy scarf, gentle wind",
+          "70" :"fall day, same golden retriever puppy, forest trail, orange fallen leaves, cozy scarf, gentle wind",
+          "80" :"fall day, same golden retriever puppy, forest trail, orange fallen leaves, cozy scarf, gentle wind",
+          "90" :"winter day, same golden retriever puppy, snowy village, red scarf, woolen hat, soft snowflakes",
+          "100" :"winter day, same golden retriever puppy, snowy village, red scarf, woolen hat, soft snowflakes",
+          "110" :"winter day, same golden retriever puppy, snowy village, red scarf, woolen hat, soft snowflakes"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 2</figcaption>
+      <img src="4.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"sunny beach, cute lively girl, casual summer outfit, holding a seashell, ocean breeze, innocent smile",
+          "10" :"sunny beach, cute lively girl, casual summer outfit, holding a seashell, ocean breeze, innocent smile",
+          "20" :"sunny beach, cute lively girl, casual summer outfit, holding a seashell, ocean breeze, innocent smile",
+          "30" :"magical shoreline, cute lively girl, outfit transforming into ocean-blue dress, sparkling water, surprised smile",
+          "40" :"magical shoreline, cute lively girl, outfit transforming into ocean-blue dress, sparkling water, surprised smile",
+          "50" :"magical shoreline, cute lively girl, outfit transforming into ocean-blue dress, sparkling water, surprised smile",
+          "60" :"underwater fantasy world, cute lively girl, flowing blue dress, glowing jellyfish, floating hair, dreamy expression",
+          "70" :"underwater fantasy world, cute lively girl, flowing blue dress, glowing jellyfish, floating hair, dreamy expression",
+          "80" :"underwater fantasy world, cute lively girl, flowing blue dress, glowing jellyfish, floating hair, dreamy expression",
+          "90" :"moonlit beach, cute lively girl, ocean-blue dress, glowing waves, magical seashells, gentle smile",
+          "100" :"moonlit beach, cute lively girl, ocean-blue dress, glowing waves, magical seashells, gentle smile",
+          "110" :"moonlit beach, cute lively girl, ocean-blue dress, glowing waves, magical seashells, gentle smile"
+      </td>
+    </div>
+    <div class="col-md-4 twenty" style="background-color:#7030a0;">
+      <figcaption>生成完整角色動畫 - 3</figcaption>
+      <img src="6.gif" width="100%"><br>
+      <td> 使用提示詞:
+          "0" :"cozy cat cafe, cute lively girl, soft sweater, latte art, playful cats, warm sunlight, gentle smile",
+          "10" :"cozy cat cafe, cute lively girl, soft sweater, latte art, playful cats, warm sunlight, gentle smile",
+          "20" :"cozy cat cafe, cute lively girl, soft sweater, latte art, playful cats, warm sunlight, gentle smile",
+          "30" :"magical cafe afternoon, cute lively girl, cat ears hair accessories, fluffy cats, floating coffee aroma, dreamy smile",
+          "40" :"magical cafe afternoon, cute lively girl, cat ears hair accessories, fluffy cats, floating coffee aroma, dreamy smile",
+          "50" :"magical cafe afternoon, cute lively girl, cat ears hair accessories, fluffy cats, floating coffee aroma, dreamy smile",
+          "60" :"vintage cat cafe, cute lively girl, apron dress, reading book, orange tabby cat on table, cozy atmosphere",
+          "70" :"vintage cat cafe, cute lively girl, apron dress, reading book, orange tabby cat on table, cozy atmosphere",
+          "80" :"vintage cat cafe, cute lively girl, apron dress, reading book, orange tabby cat on table, cozy atmosphere",
+          "90" :"night cat cafe, cute lively girl, fairy lights, black cat, cappuccino, window rain, mysterious cozy mood",
+          "100" :"night cat cafe, cute lively girl, fairy lights, black cat, cappuccino, window rain, mysterious cozy mood",
+          "110" :"night cat cafe, cute lively girl, fairy lights, black cat, cappuccino, window rain, mysterious cozy mood"
+      </td>
+    </div>
+  </div>
+  <!-- ------------------------------------------------>
   <!-- ------------------------------------------------>
 
   <!-- ------------------------------------------------>
@@ -252,4 +329,3 @@
 
 </body>
 </html>
-
